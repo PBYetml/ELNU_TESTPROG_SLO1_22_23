@@ -1,0 +1,123 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.33.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: philippe bovey, ETML-ES, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.33.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.33.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TARMCM1.DLL V1.14.3.0
+ 
+<h2>Project:</h2>
+C:\Users\phibovey\OneDrive - Education Vaud\ELNU\Epreuves\2022-2023\TEST2_S2\DossierEtudiants\MPT\ELNU_PRJ_MPT\ELNU_PRJ\MDK-ARM\ELNU_TestPRog.uvprojx
+Project File Date:  06/02/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'ELNU_TestPRog'
+assembling startup_stm32f051x8.s...
+compiling fonction.c...
+compiling main.c...
+../Src/main.c(126): error:  #65: expected a ";"
+  {
+../Src/main.c(163): warning:  #12-D: parsing restarts here after previous syntax error
+  				break;
+../Src/main.c(165): error:  #169: expected a declaration
+  	}
+../Src/main.c(229): warning:  #12-D: parsing restarts here after previous syntax error
+                                |RCC_CLOCKTYPE_PCLK1;
+../Src/main.c(230): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Src/main.c(230): error:  #65: expected a ";"
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+../Src/main.c(231): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+../Src/main.c(231): error:  #65: expected a ";"
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+../Src/main.c(232): error:  #77-D: this declaration has no storage class or type specifier
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+../Src/main.c(232): error:  #65: expected a ";"
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+../Src/main.c(234): error:  #169: expected a declaration
+    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
+../Src/main.c(240): warning:  #12-D: parsing restarts here after previous syntax error
+    HAL_RCC_EnableCSS();
+../Src/main.c(241): error:  #169: expected a declaration
+  }
+../Src/main.c(280): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+../Src/main.c: 4 warnings, 10 errors
+compiling fonctionsTestELNU.c...
+..\Src\fonctionsTestELNU.c(114): warning:  #111-D: statement is unreachable
+  	return 0; 
+..\Src\fonctionsTestELNU.c(129): warning:  #514-D: pointless comparison of unsigned integer with a negative constant
+  	if(valBruteADC < TENSION_NEGATIVE) 
+..\Src\fonctionsTestELNU.c(133): warning:  #514-D: pointless comparison of unsigned integer with a negative constant
+  	if(valBruteADC > TENSION_NEGATIVE && < TENSION_NULLE) 
+..\Src\fonctionsTestELNU.c(133): error:  #29: expected an expression
+  	if(valBruteADC > TENSION_NEGATIVE && < TENSION_NULLE) 
+..\Src\fonctionsTestELNU.c: 3 warnings, 1 error
+compiling stm32delays.c...
+compiling gpio.c...
+compiling stm32f0xx_hal_msp.c...
+compiling stm32driverlcd.c...
+compiling adc.c...
+compiling stm32f0xx_hal_rcc_ex.c...
+compiling tim.c...
+compiling stm32f0xx_hal_adc_ex.c...
+compiling stm32f0xx_hal.c...
+compiling stm32f0xx_it.c...
+compiling stm32f0xx_hal_adc.c...
+compiling stm32f0xx_hal_rcc.c...
+compiling stm32f0xx_hal_i2c.c...
+compiling stm32f0xx_hal_i2c_ex.c...
+compiling stm32f0xx_hal_gpio.c...
+compiling stm32f0xx_hal_cortex.c...
+compiling stm32f0xx_hal_dma.c...
+compiling system_stm32f0xx.c...
+compiling stm32f0xx_hal_pwr_ex.c...
+compiling stm32f0xx_hal_pwr.c...
+compiling stm32f0xx_hal_flash.c...
+compiling stm32f0xx_hal_exti.c...
+compiling stm32f0xx_hal_flash_ex.c...
+compiling stm32f0xx_hal_tim_ex.c...
+compiling stm32f0xx_hal_tim.c...
+"ELNU_TestPRog\ELNU_TestPRog.axf" - 11 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.1.pack
+                Keil.STM32F0xx_DFP.2.1.1
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_ELNU_TestPRog
+  C:\Users\phibovey\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\phibovey\AppData\Local\Arm\Packs\Keil\STM32F0xx_DFP\2.1.1\Drivers\CMSIS\Device\ST\STM32F0xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Target not created.
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
